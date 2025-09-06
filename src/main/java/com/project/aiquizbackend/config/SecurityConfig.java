@@ -75,7 +75,11 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(Arrays.asList("http://localhost:3000"));
+        // Add BOTH your local and deployed frontend URLs
+        configuration.setAllowedOrigins(Arrays.asList(
+            "http://localhost:3000", 
+            "https://ai-quiz-frontend-five.vercel.app" // <<< ADD YOUR VERCEL URL HERE
+        ));
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(Arrays.asList("*"));
         configuration.setAllowCredentials(true);

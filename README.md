@@ -1,4 +1,4 @@
-# AI Quiz Generator - Backend
+# QuizMind-API
 
 This is the Spring Boot REST API for an AI-powered quiz platform. It handles user registration and login with JWT authentication, generates dynamic quizzes using the OpenAI API, and tracks user score history.
 

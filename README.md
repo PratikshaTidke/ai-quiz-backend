@@ -1,5 +1,13 @@
 # QuizMind-API
 
+
+
+**🔴 Live Demo:** [https://your-quiz-mind-url.vercel.app](https://ai-quiz-frontend-six.vercel.app/)
+
+---
+
+
+
 This is the Spring Boot REST API for an AI-powered quiz platform. It handles user registration and login with JWT authentication, generates dynamic quizzes using the OpenAI API, and tracks user score history.
 
 ## Technologies Used

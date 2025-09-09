@@ -1,6 +1,7 @@
 package com.project.aiquizbackend.controller;
 
 import com.project.aiquizbackend.dto.AuthRequest;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.project.aiquizbackend.dto.AuthResponse;
 import com.project.aiquizbackend.model.User;
 import com.project.aiquizbackend.repository.UserRepository;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin(origins = { "http://localhost:3000", "https://ai-quiz-frontend-six.vercel.app/" })
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
